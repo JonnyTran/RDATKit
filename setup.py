@@ -1,12 +1,9 @@
 from setuptools import setup, find_packages
 
-from rdatkit.__init__ import __version__
-
 setup(
     name='rdatkit',
     description='RNA Dataset Toolkit',
     keywords='RNA Data RDAT Kit',
-    version=__version__,
 
     author='Siqi Tian, Pablo Cordero, Rhiju Das',
     author_email='rhiju@stanford.edu',
@@ -14,7 +11,7 @@ setup(
     url='https://github.com/hitrace/rdatkit/',
     license='https://rmdb.stanford.edu/rdatkit',
 
-    packages=find_packages(),
+    packages=find_packages(include=['rdatkit']),
     install_requires=open('requirements.txt', 'r').readlines(),
     classifiers=(
         'Development Status :: 5 - Production/Stable',

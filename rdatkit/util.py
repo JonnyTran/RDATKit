@@ -5,7 +5,6 @@ if __package__ is None or not __package__:
 else:
     from .path import *
 
-
 PATH_RNA_STRUCTURE_FOLD = PATH_RNA_STRUCTURE + 'exe/Fold'
 PATH_RNA_STRUCTURE_ALLSUB = PATH_RNA_STRUCTURE + 'exe/AllSub'
 PATH_RNA_STRUCTURE_STOCHASTIC = PATH_RNA_STRUCTURE + 'exe/stochastic'
